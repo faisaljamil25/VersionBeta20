@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: #201037;
+  min-height: 10vh;
+}
+
+.hero-section {
+  background: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: white;
+}
+
+#version-beta {
+  background: linear-gradient(#ff003f, #201037);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* text-shadow: 5px 5px 4px #000000; */
+}
+/* .hero-sponsor {
+    padding: 0.5rem;
+  }
+  
+  .hero-sponsor h4 {
+    padding: 0.5rem;
+    font-size: 0.6rem;
+  } */
+
+/* Media Queries */
+/* 
+  X-Small devices (portrait phones, less than 576px)
+  No media query for `xs` since this is the default in Bootstrap
+  
+  Small devices (landscape phones, 576px and up) */
+/* @media (max-width: 576px) {
+    .hero-section {
+      background-position: right;
+    }
+  } */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
