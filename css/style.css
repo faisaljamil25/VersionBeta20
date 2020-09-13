@@ -25,7 +25,7 @@
 
 #version-beta {
   font-weight: 500;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   background: linear-gradient(#ff003f, #201037);
   background-clip: text;
   -webkit-background-clip: text;
@@ -49,17 +49,20 @@
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
+.register {
+  border: 2px solid #c71642;
+  background: #c71642;
+  border-radius: 2rem;
+}
+
 /* Media Queries */
 /* 
   X-Small devices (portrait phones, less than 576px)
   No media query for `xs` since this is the default in Bootstrap
   
   Small devices (landscape phones, 576px and up) */
-/* @media (max-width: 576px) {
-    .hero-section {
-      background-position: right;
-    }
-  } */
+@media (min-width: 576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
