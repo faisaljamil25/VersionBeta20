@@ -33,13 +33,16 @@
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* button */
+/* Dashboard button */
+
 .dashboard {
   justify-content: center;
   margin-top: 3.6rem;
   font-size: 1.2rem;
 }
-#dashboard-button {
+.dashboard-button,
+.vb19,
+.timeline-btn {
   background: linear-gradient(90deg, #6f0f87, #c71642);
   color: white;
   border: none;
@@ -47,6 +50,15 @@
   padding: 0.8rem 1.8rem;
   cursor: pointer;
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.vb19 {
+  border-radius: 1.6rem;
+  z-index: 2;
+}
+.timeline-btn {
+  font-size: 1.2rem;
+  margin: 1.8rem;
+  border-radius: 2rem;
 }
 
 .register {
@@ -63,22 +75,55 @@
 
 .about-text h1 {
   text-align: center;
-  padding: 1rem;
-  padding-bottom: 1.6rem;
+  padding: 1.2rem 1.2rem 0 1.2rem;
   letter-spacing: 0.3rem;
 }
+.about-text p {
+  padding: 1rem;
+}
 
-/* .about-big {
-  font-size: 3.6rem;
-  font-weight: bolder;
-  letter-spacing: 0.3rem;
-  color: #c55ede;
-  position: absolute;
-  top: 18%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+/* Schedule Section */
+
+/* .schedule-section {
+  background: linear-gradient(#ffffff, #6f0f87);
 } */
+
+.sch-box {
+  padding: 1.6rem;
+  background-color: #fff;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.25);
+  /* height: 20rem; */
+}
+.sch-box p {
+  font-size: 1rem;
+}
+.date {
+  color: #6f0f87;
+  margin-bottom: 1rem;
+}
+
+.event {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #c71642;
+}
+.schedule-heading {
+  position: relative;
+}
+.sch-big {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.2rem;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  color: #c55ede;
+  z-index: -1;
+}
+/* Media Queries */
 
 @media (max-width: 992px) {
   .about-section .row .col-md-10 .about-image img {
@@ -89,13 +134,35 @@
     width: initial;
     height: initial;
   }
+  .about-section .row .col-md-10:last-child {
+    position: relative;
+  }
+  .about-big {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    padding: 1.6rem 1.2rem 0 1.2rem;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    color: #c55ede;
+    z-index: -1;
+  }
 }
-/* Media Queries */
+
 /* 
   X-Small devices (portrait phones, less than 576px)
   No media query for `xs` since this is the default in Bootstrap
   
   Small devices (landscape phones, 576px and up) */
+/* @media only screen and (max-width: 767px) {
+  .sch-box {
+    height: auto;
+  }
+} */
+
 @media (min-width: 576px) {
   /* .about-section .row .col-md-6 .about-text {
     padding: 1rem;
@@ -108,6 +175,7 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  /* About Section */
   .about-section .row .col-md-10 .about-image img {
     width: 90%;
     border-radius: 0.2rem;
@@ -115,7 +183,6 @@
   .about-section .row .col-md-10:last-child {
     position: relative;
   }
-
   .about-section .row .col-md-10 .about-text {
     position: absolute;
     top: 50%;
@@ -124,9 +191,27 @@
     background: white;
     border-radius: 0.2rem;
     text-align: left;
-    padding: 2rem 2rem 5rem 5rem;
+    padding: 2rem 2rem 2rem 5rem;
     box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.25);
     z-index: 1;
+  }
+  .about-big {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.9;
+    padding: 2rem 2rem 2rem 5rem;
+    font-size: 3.6rem;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    color: #c55ede;
+    z-index: -1;
+  }
+  .vb19 {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-70%);
   }
 }
 

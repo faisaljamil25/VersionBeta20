@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./images/beta.png" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -20,15 +21,15 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="my-navbar navbar navbar-expand-lg navbar-dark">
+      <nav class="my-navbar fixed-top navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
-              src="./images/Logo.png"
-              width="106"
-              height="40"
+              src="./images/Logo.svg"
+              width="96"
+              height="36"
               class="d-inline-block align-top"
-              alt=""
+              alt="ISTE MANIT"
               loading="lazy"
             />
           </a>
@@ -91,7 +92,7 @@
           <h6 class="mb-3">October 20 - October 25, 2020</h6>
           <h2 class="mb-3">Now Online</h2>
           <div class="dashboard">
-            <button id="dashboard-button" style="text-transform: none">
+            <button class="btn dashboard-button" style="text-transform: none">
               <svg
                 class="logo"
                 xmlns="http://www.w3.org/2000/svg"
@@ -114,6 +115,7 @@
       <!-- Hero Section end -->
     </header>
     <main>
+      <!-- About Section -->
       <section class="about-section">
         <div class="container text-center">
           <div class="row justify-content-center">
@@ -124,7 +126,7 @@
             </div>
             <div class="col-md-10 col-lg-6">
               <div class="about-text">
-                <!-- <h1 class="about-big">ABOUT</h1> -->
+                <h2 class="about-big">ABOUT</h2>
                 <h1>ABOUT</h1>
                 <p>
                   Version β: Possibly India’s biggest hackathon in the near
@@ -140,10 +142,72 @@
                   individual.
                 </p>
               </div>
+              <button class="btn vb19" style="text-transform: none">
+                VERSION BETA 2019
+              </button>
             </div>
           </div>
         </div>
       </section>
+      <!-- About Section end -->
+      <!-- Schedule Section -->
+      <section class="schedule-section">
+        <div class="container">
+          <div class="row justify-content-center schedule-heading pt-2 pb-2">
+            <div class="col-md-10 text-center">
+              <h1 class="mb-4 sch-big">SCHEDULE</h1>
+              <h1 class="mb-4">EVENT SCHEDULE</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="sch-box">
+                <h2 class="date">October 14, 2020</h2>
+                <h4>Registration Opens</h4>
+                <span class="event">VERSION BETA</span>
+                <p class="mt-4">
+                  Registration for second edition of central India’s largest
+                  hackathon begins.
+                </p>
+              </div>
+              <div class="sch-box">
+                <h2 class="date">October 14-19, 2020</h2>
+                <h4>Idea Submission Phase</h4>
+                <span class="event">VERSION BETA</span>
+                <p class="mt-4">
+                  Idea for the given problem statement is proposed and submitted
+                  for on-site hackathon.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="sch-box">
+                <h2 class="date">October 21, 2020</h2>
+                <h4>Shortlist Announcement</h4>
+                <span class="event">VERSION BETA</span>
+                <p class="mt-4">
+                  List of shortlisted candidates for onsite round of hackathon
+                  is announced.
+                </p>
+              </div>
+              <div class="sch-box">
+                <h2 class="date">October 23-25, 2020</h2>
+                <h4>Onsite Hackathon</h4>
+                <span class="event">VERSION BETA</span>
+                <p class="mt-4">
+                  Onsite round in which all the shortlisted candidates compete
+                  for amazing prizes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col text-center">
+          <button class="btn timeline-btn">TIMELINE</button>
+        </div>
+      </section>
+      <!-- Schedule Section end -->
     </main>
     <footer></footer>
     <!-- JavaScript -->
