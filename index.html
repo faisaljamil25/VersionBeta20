@@ -21,7 +21,7 @@
   <body>
     <header>
       <!-- Navigation -->
-      <nav class="my-navbar fixed-top navbar navbar-expand-lg navbar-dark">
+      <nav class="my-navbar navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -55,16 +55,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link pr-3 pl-3" href="#">About</a>
+                <a class="nav-link pr-3 pl-3" href="#about-link">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pr-3 pl-3" href="#">Schedule</a>
+                <a class="nav-link pr-3 pl-3" href="#schedule-link">Schedule</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link pr-3 pl-3" href="#">Prizes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link pr-3 pl-3" href="#">Gallery</a>
+                <a class="nav-link pr-3 pl-3" href="#gallery-link">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link pr-3 pl-3" href="#">Sponsors</a>
@@ -91,7 +91,7 @@
           <h1 class="display-1 p-3" id="version-beta">VERSION &beta;</h1>
           <h6 class="mb-3">October 20 - October 25, 2020</h6>
           <h2 class="mb-3">Now Online</h2>
-          <div class="dashboard">
+          <div class="dashboard display-1">
             <button class="btn dashboard-button" style="text-transform: none">
               <svg
                 class="logo"
@@ -112,6 +112,7 @@
           </div>
         </div>
       </section>
+      <div class="mb-3" id="about-link"></div>
       <!-- Hero Section end -->
     </header>
     <main>
@@ -126,7 +127,7 @@
             </div>
             <div class="col-md-10 col-lg-6">
               <div class="about-text">
-                <h2 class="about-big">ABOUT</h2>
+                <h2 class="about-big display-3">ABOUT</h2>
                 <h1>ABOUT</h1>
                 <p>
                   Version β: Possibly India’s biggest hackathon in the near
@@ -142,7 +143,11 @@
                   individual.
                 </p>
               </div>
-              <button class="btn vb19" style="text-transform: none">
+              <button
+                class="btn vb19"
+                style="text-transform: none"
+                id="schedule-link"
+              >
                 VERSION BETA 2019
               </button>
             </div>
@@ -155,7 +160,7 @@
         <div class="container">
           <div class="row justify-content-center schedule-heading pt-2 pb-2">
             <div class="col-md-10 text-center">
-              <h1 class="mb-4 sch-big">SCHEDULE</h1>
+              <h1 class="mb-4 sch-big display-1">SCHEDULE</h1>
               <h1 class="mb-4">EVENT SCHEDULE</h1>
             </div>
           </div>
@@ -204,10 +209,73 @@
           </div>
         </div>
         <div class="col text-center">
-          <button class="btn timeline-btn">TIMELINE</button>
+          <button class="btn timeline-btn" id="gallery-link">TIMELINE</button>
         </div>
       </section>
       <!-- Schedule Section end -->
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <div class="container">
+          <div
+            class="row justify-content-center gallery-heading mb-4 pt-2 pb-2"
+          >
+            <div class="col-md-10 text-center">
+              <h1 class="mb-4 gallery-big display-3">GALLERY</h1>
+              <h1 class="mb-4">GALLERY</h1>
+            </div>
+          </div>
+          <div id="gallery">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12 img">
+                <img src="images/img-1.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 img">
+                <img src="images/img-2.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 img">
+                <img src="images/img-3.JPG" class="img-fluid photo" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-12">
+                <div class="row">
+                  <div class="col-lg-12 col-md-6 img">
+                    <img src="images/img-4.JPG" class="img-fluid photo" />
+                  </div>
+                  <div class="col-lg-12 col-md-6 img">
+                    <img src="images/img-5.JPG" class="img-fluid photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-12 img">
+                <img src="images/img-6.JPG" class="img-fluid photo" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 img">
+                <img src="images/img-7.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-6 col md-6 img">
+                <img src="images/img-8.JPG" class="img-fluid photo" />
+              </div>
+            </div>
+            <div class="row last-row">
+              <div class="col-lg-3 col-md-12 img">
+                <img src="images/img-9.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-3 col-md-6 img">
+                <img src="images/img-10.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-3 col-md-6 img">
+                <img src="images/img-11.JPG" class="img-fluid photo" />
+              </div>
+              <div class="col-lg-3 col-md-12 img">
+                <img src="images/img-12.JPG" class="img-fluid photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <!-- JavaScript -->
